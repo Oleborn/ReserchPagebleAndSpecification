@@ -77,7 +77,7 @@ public class PersonController {
      * @see PersonService#findAllPersonsPageDtoFil(RequestDto)
      */
 
-    @GetMapping("/getAllDtoFil")
+    @GetMapping("/getAll-filter")
     public ResponseEntity<ResponseDto> getAllDtoFil(@ModelAttribute RequestDto requestDto) {
         return ResponseEntity.ok(personService.findAllPersonsPageDtoFil(requestDto));
     }
